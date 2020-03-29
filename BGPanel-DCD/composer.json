@@ -1,0 +1,22 @@
+{
+    "name": "seosepa/bgpanel-dcd",
+    "description": "dynamic config deployment",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Stefan Konig",
+            "email": "stefan@seosepa.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "catfan/Medoo": "^1.4",
+        "twig/twig": "^2.0",
+        "jimmiw/php-time-ago": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BGPanelDCD\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+//************************************************** ****************************
+// Call of Duty 4
+//************************************************** ****************************
+//************************************************** ****************************
+// Public Information
+//************************************************** ****************************
+sets sv_hostname "{{ name }}"
+
+// Password Settings
+set g_password "tr18"
+
+// Player slots setup
+set sv_maxclients "12" // MAX server player slots, this is TOTAL player slots
+// Ping
+set sv_minPing "0" // MIN player ping on CONNECT, any lower and player isnt allowed to connect
+set sv_maxping "250" // MAX player ping on CONNECT, any higher and player isnt allowed to connect
+
+// Client Download Settings. (0=off/1=on) Used for MODs and custom maps
+// See included Quick Setup Guide for instructions.
+set sv_allowdownload "0"
+seta sv_wwwDownload "1"
+seta sv_wwwBaseURL "http://redirectz.event.thereality.nl/cod4"
+seta sv_wwwDlDisconnected "1"
+
+// Rate
+set sv_maxRate "25000"
+set g_gametype sd
+set promod_mode match_mr12_pb

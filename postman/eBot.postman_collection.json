@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "7e6ccc16-4c2c-4e38-ab4d-edeeeacc9494",
+		"name": "eBot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create server",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "servers[id]",
+							"value": "{{serverid}}",
+							"type": "text"
+						},
+						{
+							"key": "servers[_csrf_token]",
+							"value": "{{csrf}}",
+							"type": "text"
+						},
+						{
+							"key": "servers[ip]",
+							"value": "{{ip}}",
+							"type": "text"
+						},
+						{
+							"key": "servers[hostname]",
+							"value": "{{name}}",
+							"type": "text"
+						},
+						{
+							"key": "servers[rcon]",
+							"value": "{{rcon}}",
+							"type": "text"
+						},
+						{
+							"key": "servers[tv_ip]",
+							"value": "{{tvip}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ebot.networked.pro/admin.php/servers/create",
+					"protocol": "https",
+					"host": [
+						"ebot",
+						"networked",
+						"pro"
+					],
+					"path": [
+						"admin.php",
+						"servers",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

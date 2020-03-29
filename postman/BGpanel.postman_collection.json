@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "24ca912a-3b8c-4c92-a137-aef5cd305406",
+		"name": "BGpanel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateGameServer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Referer",
+						"value": "https://gamepanel.networked.pro/admin/serveradd.php?gameid=17",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "task",
+							"value": "{{task}}",
+							"type": "text"
+						},
+						{
+							"key": "gameID",
+							"value": "{{gameID}}",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "{{name}}",
+							"type": "text"
+						},
+						{
+							"key": "groupID",
+							"value": "{{groupID}}",
+							"type": "text"
+						},
+						{
+							"key": "ipID",
+							"value": "{{ipID}}",
+							"type": "text"
+						},
+						{
+							"key": "priority",
+							"value": "{{priority}}",
+							"type": "text"
+						},
+						{
+							"key": "slots",
+							"value": "{{slots}}",
+							"type": "text"
+						},
+						{
+							"key": "port",
+							"value": "{{port}}",
+							"type": "text"
+						},
+						{
+							"key": "queryPort",
+							"value": "{{queryPort}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg1Name",
+							"value": "{{cfg1Name}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg1",
+							"value": "{{cfg1}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg2Name",
+							"value": "{{cfg2Name}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg2",
+							"value": "{{cfg2}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg3Name",
+							"value": "{{cfg3Name}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg3",
+							"value": "{{cfg3}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg4Name",
+							"value": "{{cfg4Name}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg4",
+							"value": "{{cfg4}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg5Name",
+							"value": "{{cfg5Name}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg5",
+							"value": "{{cfg5}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg6Name",
+							"value": "{{cfg6Name}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg6",
+							"value": "{{cfg6}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg7Name",
+							"value": "{{cfg7Name}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg7",
+							"value": "{{cfg7}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg8Name",
+							"value": "{{cfg8Name}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg8",
+							"value": "{{cfg8}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg9Name",
+							"value": "{{cfg9Name}}",
+							"type": "text"
+						},
+						{
+							"key": "cfg9",
+							"value": "{{cfg9}}",
+							"type": "text"
+						},
+						{
+							"key": "startLine",
+							"value": "{{startLine}}",
+							"type": "text"
+						},
+						{
+							"key": "radioAction",
+							"value": "{{radioAction}}",
+							"type": "text"
+						},
+						{
+							"key": "path",
+							"value": "{{path}}",
+							"type": "text"
+						},
+						{
+							"key": "path2",
+							"value": "{{path2}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://gamepanel.networked.pro/admin/serverprocess.php",
+					"protocol": "https",
+					"host": [
+						"gamepanel",
+						"networked",
+						"pro"
+					],
+					"path": [
+						"admin",
+						"serverprocess.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteGameServer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gamepanel.networked.pro/admin/serverprocess.php?task=serverdelete&serverid={{del}}",
+					"protocol": "https",
+					"host": [
+						"gamepanel",
+						"networked",
+						"pro"
+					],
+					"path": [
+						"admin",
+						"serverprocess.php"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "serverdelete"
+						},
+						{
+							"key": "serverid",
+							"value": "{{del}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ValidateGameServer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gamepanel.networked.pro/admin/serverprocess.php?task=servervalidation&serverid={{serverid}}",
+					"protocol": "https",
+					"host": [
+						"gamepanel",
+						"networked",
+						"pro"
+					],
+					"path": [
+						"admin",
+						"serverprocess.php"
+					],
+					"query": [
+						{
+							"key": "task",
+							"value": "servervalidation"
+						},
+						{
+							"key": "serverid",
+							"value": "{{serverid}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "29fb3187-e325-4f29-921d-fc5b70a53a10",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "afce57f1-3ea3-4195-ab54-e6750bdc1e73",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
